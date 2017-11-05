@@ -1,5 +1,5 @@
 # Write your code here.
-def word_substituter
+def dictonary
 
 dictionary = {"hello" => "hi",
   "to" => '2',
@@ -12,3 +12,5 @@ dictionary = {"hello" => "hi",
   "at" => "@",
   "and" => "&"}
 end
+
+
