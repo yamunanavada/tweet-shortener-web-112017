@@ -22,7 +22,7 @@ def word_substituter(string)
   new_string_array = []
 
   string_array.each do |word|
-    
+
     if words_in_dict.index(word.downcase) != nil
       new_string_array.push(substitutes_in_dict[words_in_dict.index(word.downcase)])
     else
