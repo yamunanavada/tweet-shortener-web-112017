@@ -1,5 +1,5 @@
 # Write your code here.
-def dictonary
+def dictionary
 
 dictionary = {"hello" => "hi",
   "to" => '2',
