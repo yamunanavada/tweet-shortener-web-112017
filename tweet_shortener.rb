@@ -22,8 +22,9 @@ def word_substituter(string)
   new_string_array = []
 
   string_array.each do |word|
-    if words_in_dict.index(word) != nil
-      new_string_array.push(substitutes_in_dict[words_in_dict.index(word)])
+    
+    if words_in_dict.index(word.downcase) != nil
+      new_string_array.push(substitutes_in_dict[words_in_dict.index(word.downcase)])
     else
       new_string_array.push(word)
     end
@@ -38,6 +39,4 @@ def bulk_tweet_shortener(array)
   array.each do |tweet|
     puts word_substituter(tweet)
   end
-
-
 end
