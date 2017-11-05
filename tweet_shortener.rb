@@ -29,6 +29,6 @@ def word_substituter(string)
     end
   end
 
-  new_string = string_array.join(" ")
+  new_string = new_string_array.join(" ")
   new_string
 end
