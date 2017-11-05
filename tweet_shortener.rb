@@ -19,10 +19,13 @@ def word_substituter(string)
   substitutes_in_dict = dictionary.values
 
   string_array = string.split(" ")
+  new_string_array = []
 
   string_array.each do |word|
     if words_in_dict.index(word) != nil
-      word = substitutes_in_dict[words_in_dict.index(word)]
+      new_string_array.push(substitutes_in_dict[words_in_dict.index(word)])
+    else
+      new_string_array.push(word)
     end
   end
 
